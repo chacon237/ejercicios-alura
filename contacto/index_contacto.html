@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactos</title>
+    <link rel="stylesheet" href="../productos/reset.css">
+    <link rel="stylesheet" href="style_contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="cont__header">
+
+                <h1 class="titulo__imagen"><a href="../Index.html"><img class="logo__principal" src="../recursos/logo.png" alt="logo"></a></h1>
+
+            <nav>
+                <ul class="list__nav">
+                    <li class="items__nav"><a href="../Index.html">Home</a></li>
+                    <li class="items__nav"><a href="../productos/index_productos.html">Productos</a></li>
+                    <li class="items__nav"><a href="contactos/index_contactos">Contactos</a></li>
+                </ul>
+
+            </nav>    
+        
+
+        </div>
+        
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input class="input__prin" type="text" id="nombreApellido" required>
+
+                <label for="correoElectronico">Correro Electronico</label>
+                <input class="input__prin" type="email" id="correoElectronico" placeholder="ejemplo@ejemplo.com" required>
+
+                <label for="telefono">Telefono</label>
+                <input class="input__prin" type="tel" id="telefono" placeholder="(xx)xxxx-xxxx" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea class="mensaje" name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend class="t__contacto">¿Como quiere que lo contacte?</legend>
+                <label for="telefno"><input type="radio" value="telefono" id="telefono" name="contacto">Telefono</label>
+                <label for="Email"><input type="radio" value="email" id="Email" name="contacto">Email</label>
+                <label for="whatsapp"><input type="radio" value="whatsapp" id="whatsapp" name="contacto" checked>Whatsapp</label>
+                
+                <legend class="t__contacto" >¿En que horario desea ser contactado?</legend>
+                <select class="select" name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+
+                <label class="checkbox" for="checkbox"><input type="checkbox" id="checkbox" checked >¿Desea recibir novedades de la Barberia Alura?</label>
+            </fieldset>
+
+            <input class="enviar"  type="submit" value="Enviar Formulario">
+
+            <table class="horario">
+                <thead>
+                    <tr class="t__encabezado">
+                        <th class="horas">Dia </th>
+                        <th class="horas">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="t__encabezado t__cuerpo">
+                        <td class="horas">Lunes</td>
+                        <td class="horas">8:00 Am - 20:00 Pm</td>
+                    </tr>
+                    <tr class="t__encabezado t__cuerpo">
+                        <td class="horas">Miercoles</td>
+                        <td class="horas">8:00 Am - 20:00 Pm</td>
+                    </tr>
+                    <tr class="t__encabezado t__cuerpo">
+                        <td class="horas">Viernes</td>
+                        <td class="horas">8:00 Am - 20:00 Pm</td>
+                    </tr>
+                </tbody>
+                
+                
+            </table>
+
+            
+
+            
+
+        </form>
+    </main>
+
+    <footer>
+
+        <img class="iamgen__pie" src="../recursos/logo-blanco.png" alt="logo-blanco">
+        <p class="pie">&copy copyright Barberia Alura 2020</p>
+
+    </footer>
+    
+</body>
+</html>

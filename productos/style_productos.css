@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #bbb;
+    padding: 20px 0;
+    
+}
+
+.cont__header{
+    position: relative;
+    width: 940px;    
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.items__nav{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 15px;    
+}
+
+
+.items__nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.items__nav a:hover{
+    color: #c26c22;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.lista__productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+.imagen__producto{
+    width: 100%;
+}
+
+
+.lista__productos .items__productos{
+    display: inline-block;    
+    text-align: center;
+    width: 30%;
+    vertical-align: top;      
+    margin: 0 1.5%;
+    padding: 30px 20px;    
+    border: 1px solid #000;
+    border-radius: 20px;  
+    font-size: 15px; 
+    
+}
+
+.lista__productos .items__productos:hover{
+    border-color: #c26c22;
+    
+}
+
+.lista__productos .items__productos:active{
+    border-color: #088c19;
+}
+
+.t__producto{
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.lista__productos .items__productos:hover .t__producto{
+    font-size: 30px;
+}
+
+.descripcion__productos{
+    font-size: 18px;
+
+}
+
+.descripcion__p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    background: url(../recursos/bg.jpg);
+    text-align: center;
+    padding: 50px;
+}
+
+
+.pie{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+
+    .items__nav a{
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .cont__header{
+        width: auto;
+    }
+
+    .titulo__imagen{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .lista__productos .items__productos{
+        display: block;
+        margin: 15px 1.5%;
+    }
+    
+    .lista__productos .items__producto:hover .t__producto{
+        font-size: 28px;
+
+    }
+ 
+}
