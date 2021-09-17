@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif; 
+    
+}
+/* estilos encabezado */
+
+header{
+    background: #bbb;
+    padding: 20px 0;
+    
+}
+
+.cont__header{
+    position: relative;
+    width: 940px;    
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.items__nav{
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0 15px;    
+}
+
+
+.items__nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.items__nav a:hover{
+    color: #c26c22;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+
+.banner__p{
+    width: 100%;
+}
+
+.contaner{    
+    background: #fefefe;
+    padding: 3em 0;
+}
+
+.sobre__alura{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo__p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 2em;
+    clear: left;
+}
+.contaner p{
+    margin: 0 0 1m;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.text__principal{
+    font-size: 1em;
+    text-align: left;
+    margin: 1em;
+}
+
+.mision{
+    font-size: 20px;
+}
+
+.text__strong{
+    color: red;
+}
+
+.ubicacion{
+    padding: 3em 0;
+    background: linear-gradient(#fefefe, #888);
+    
+}
+
+.segundo{
+    margin: 0 0 2em;
+    text-align: center; 
+}
+.mapa{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contaner__diferenciales{
+    padding: 3em 0;
+    background: #888;
+    
+}
+
+.c__diferenciales{
+    width: 640px;
+    margin: 0 auto;
+
+}
+
+
+.diferenciales{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;     
+}
+
+.items__diferenciales{       
+    line-height: 1.7em;
+}
+.items__diferenciales::before{
+    content: "★";
+
+}
+.items__diferenciales:first-child{
+    font-weight: bold;
+}
+.imagen__diferenciales{
+    width: 60%;    
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000;
+}
+.imagen__diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 510px;
+    margin: 3em auto;
+}
+
+@media screen and (max-width: 480px) {
+
+    .items__nav a{
+        font-size: 15px;
+        width: 50%;
+    }
+
+    .titulo__p{
+        text-align: center;
+    }
+
+    .cont__header, .mapa, .sobre__alura, .video, .c__diferenciales{
+        width: auto;
+        
+    }
+
+    .titulo__imagen{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .diferenciales{
+        margin-bottom: 20px;
+    }
+
+    .imagen__diferenciales, .diferenciales{
+        width: 100%;
+    }
+
+    .contaner .ubicacion .contaner__diferenciales{
+        padding: 1em 0;
+        
+    }
+    
+
+    
+}
+
+/* estilos pie de pagina */
+
+footer{
+    background: url(recursos/bg.jpg);
+    text-align: center;
+    padding: 50px;
+}
+
+
+.pie{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+
+
